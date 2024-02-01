@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="vault.js"></script>
+  </head>
+  <body>
+    <h1>Super Secret Vault</h1>
+    <!--I put the script function above the button bc it wasn't working properly before, and I assumed the function had to be defined before it was called.  In retrospect, it probably wasn't working cause I was using the vscode page, not a browser page.-->
+    <script>
+      function playRev2() {
+        alert(
+          `You have recieved this message because you have been chosen to open an important vault.  Here is the secret combination: ${numOne} - ${numTwo} - ${numThree}`
+        );
+      }
+    </script>
+    <!--since the function "playRev2" has no variables and only exists to trigger an alert, it probably could've been in whatever order, but since it has to be defined before it's called in JS, I think it's a decent principle to stick with.-->
+    <button onclick="playRev2()">"Click for combination"</button>
+    <!-- for the record, these long and rambling comments are bc this was a pretty simple thing, there's not much to explain, and I'm bored and typing, not because I think comments on actual projects should be written like this-->
+  </body>
+</html>
